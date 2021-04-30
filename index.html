@@ -2,9 +2,30 @@
 <html>
 <head>
 	<title>snap_potion</title>
+	
+
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <progress value="0" max="180" id="progressBar"></progress>
+    <script type="text/javascript">
+        var timeleft = 180;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("progressBar").value = 180 - timeleft;
+  timeleft -= 1;
+}, 1000);
+    </script>
+
 </head>
 	
 	<meta http-equiv="refresh" content="180; url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
+	
 	
 
 	<legend>you have landed in heaven</legend>
